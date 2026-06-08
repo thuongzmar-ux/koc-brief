@@ -92,7 +92,7 @@ footer strong{color:#64748b}
 
     <!-- PHẦN 1 -->
     <div class="section">
-      <div class="section-title">Phần 1 — Thương hiệu & Sản phẩm</div>
+      <div class="section-title">Phần 1 — Thương hiệu & Điểm bán</div>
 
       <div class="grid-2">
         <div class="row">
@@ -103,42 +103,53 @@ footer strong{color:#64748b}
           <label>Ngành hàng <span class="req">*</span></label>
           <select name="nganh_hang" required>
             <option value="">-- Chọn ngành --</option>
-            <option>F&B (Đồ ăn / Thức uống)</option>
+            <option>F&B — Trà sữa / Café</option>
+            <option>F&B — Nhà hàng / Quán ăn</option>
+            <option>F&B — Bánh / Dessert</option>
+            <option>F&B — Khác</option>
             <option>Mỹ phẩm / Làm đẹp</option>
             <option>Thời trang / Phụ kiện</option>
-            <option>Trang sức</option>
             <option>Đồ gia dụng</option>
             <option>Sức khỏe / Thực phẩm chức năng</option>
-            <option>Mẹ & Bé</option>
             <option>Khác</option>
           </select>
         </div>
       </div>
 
       <div class="row">
-        <label>Sản phẩm cần promote <span class="req">*</span> <span class="tag">tối đa 3 SP</span></label>
-        <textarea name="san_pham_promote" required placeholder="VD: Trà sữa trân châu hoàng kim, Matcha latte, Kem cheese..."></textarea>
+        <label>Địa chỉ điểm bán / chi nhánh khai trương <span class="req">*</span></label>
+        <textarea name="dia_chi_diem_ban" required placeholder="VD: 123 Quang Trung, Phường 10, Gò Vấp, TP.HCM\nChi nhánh 2: 456 Lê Đức Thọ, Nam Từ Liêm..."></textarea>
+      </div>
+
+      <div class="row">
+        <label>Menu / Món / Sản phẩm muốn KOC showcase <span class="req">*</span> <span class="tag">tối đa 3–5 món</span></label>
+        <textarea name="san_pham_promote" required placeholder="VD: Trà sữa trân châu hoàng kim, Matcha latte, Kem cheese, Combo khai trương..."></textarea>
       </div>
 
       <div class="grid-2">
         <div class="row">
-          <label>Mức giá bán lẻ</label>
-          <input type="text" name="gia_ban" placeholder="VD: 45.000đ – 75.000đ">
+          <label>Mức giá trung bình</label>
+          <input type="text" name="gia_ban" placeholder="VD: 45.000đ – 75.000đ / món">
         </div>
         <div class="row">
-          <label>Link TikTok Shop / Sản phẩm</label>
+          <label>Link TikTok / Fanpage / Website</label>
           <input type="text" name="link_tiktok_shop" placeholder="https://...">
         </div>
       </div>
 
       <div class="row">
-        <label>Điểm bán khác biệt — USP <span class="req">*</span></label>
-        <textarea name="usp" required placeholder="Tại sao khách nên mua? Điểm gì nổi bật hơn đối thủ?"></textarea>
+        <label>Điểm khác biệt nổi bật (USP) <span class="req">*</span></label>
+        <textarea name="usp" required placeholder="VD: Trà sữa pha fresh 100%, không bột pha sẵn. Không gian check-in độc đáo. Giá bình dân phù hợp sinh viên..."></textarea>
+      </div>
+
+      <div class="row">
+        <label>Không khí / Vibe của quán <span class="req">*</span></label>
+        <textarea name="vibe_quan" required placeholder="VD: Tone màu pastel, ánh đèn vàng ấm, concept Nhật Bản hiện đại. Phù hợp chụp ảnh, sống ảo. Nhạc chill..." style="min-height:70px"></textarea>
       </div>
 
       <div class="row">
         <label>Đối tượng khách hàng mục tiêu</label>
-        <input type="text" name="khach_hang_muc_tieu" placeholder="VD: Nữ 18–30, sinh viên và dân văn phòng tại TP.HCM">
+        <input type="text" name="khach_hang_muc_tieu" placeholder="VD: Nữ 18–28, sinh viên và dân văn phòng khu vực Gò Vấp, TP.HCM">
       </div>
     </div>
 
@@ -258,13 +269,23 @@ footer strong{color:#64748b}
       </div>
 
       <div class="row">
-        <label>Tài nguyên Brand sẽ cung cấp cho KOC</label>
+        <label>Ưu đãi khai trương Brand muốn KOC truyền thông <span class="req">*</span></label>
+        <textarea name="uu_dai_khai_truong" required placeholder="VD: Giảm 30% tất cả món trong 3 ngày khai trương. Mua 1 tặng 1 Trà sữa size L. Freeship đơn đầu tiên trên app..."></textarea>
+      </div>
+
+      <div class="row">
+        <label>Brand hỗ trợ gì cho KOC khi đến quay?</label>
         <div class="checkbox-group">
-          <label class="check-item"><input type="checkbox" name="tai_nguyen[]" value="Sản phẩm mẫu gửi tay"><span>Sản phẩm mẫu (gửi tay)</span></label>
-          <label class="check-item"><input type="checkbox" name="tai_nguyen[]" value="Hình ảnh / Video gốc chất lượng cao"><span>Hình ảnh / Video gốc chất lượng cao</span></label>
-          <label class="check-item"><input type="checkbox" name="tai_nguyen[]" value="Voucher / Mã giảm giá"><span>Voucher / Mã giảm giá cho KOC chia sẻ</span></label>
-          <label class="check-item"><input type="checkbox" name="tai_nguyen[]" value="Đơn mời trải nghiệm tại địa điểm"><span>Đơn mời trải nghiệm tại địa điểm</span></label>
+          <label class="check-item"><input type="checkbox" name="tai_nguyen[]" value="Mời dùng thử miễn phí tại quán"><span>🍵 Mời dùng thử / trải nghiệm miễn phí tại quán</span></label>
+          <label class="check-item"><input type="checkbox" name="tai_nguyen[]" value="Hình ảnh / Video gốc chất lượng cao"><span>📷 Hình ảnh / Video gốc chất lượng cao</span></label>
+          <label class="check-item"><input type="checkbox" name="tai_nguyen[]" value="Voucher / Mã giảm giá để KOC chia sẻ với followers"><span>🎟️ Voucher / Mã giảm giá để KOC chia sẻ với followers</span></label>
+          <label class="check-item"><input type="checkbox" name="tai_nguyen[]" value="Hỗ trợ chụp ảnh / setup cảnh quay tại quán"><span>📸 Hỗ trợ setup cảnh quay / ánh sáng tại quán</span></label>
         </div>
+      </div>
+
+      <div class="row">
+        <label>Yêu cầu trang phục / hình ảnh KOC khi đến quay</label>
+        <input type="text" name="trang_phuc_koc" placeholder="VD: Trang phục lịch sự, tone nhẹ nhàng. Không mặc đồng phục thương hiệu khác. Hoặc: Tự do, không yêu cầu">
       </div>
     </div>
 
@@ -367,7 +388,7 @@ footer strong{color:#64748b}
   </form>
 
   <div class="note">
-    💡 <strong>Lưu ý từ Agency:</strong> Brief nhận trước 17:00 → Agency phản hồi danh sách KOC sơ bộ trong <strong>24h làm việc</strong>. Brand cần duyệt danh sách KOC trong <strong>24h</strong> sau khi nhận để Agency kịp liên hệ và gửi hàng mẫu đúng tiến độ.
+    💡 <strong>Lưu ý từ Agency:</strong> Brief nhận trước 17:00 → Agency phản hồi danh sách KOC sơ bộ trong <strong>24h làm việc</strong>. Brand cần duyệt danh sách KOC trong <strong>24h</strong> sau khi nhận để Agency kịp liên hệ và sắp xếp lịch quay đúng tiến độ.
   </div>
 
   <footer>
