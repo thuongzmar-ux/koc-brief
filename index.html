@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KOC Brief — ZCOM Agency</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#0f0f13;color:#e2e8f0;min-height:100vh;padding:40px 16px}
+.wrapper{max-width:760px;margin:0 auto}
+header{text-align:center;margin-bottom:48px}
+.badge{display:inline-block;background:linear-gradient(135deg,#f97316,#ec4899);padding:6px 16px;border-radius:999px;font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px}
+h1{font-size:28px;font-weight:700;line-height:1.3;margin-bottom:8px}
+h1 span{background:linear-gradient(135deg,#f97316,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+header p{color:#94a3b8;font-size:14px}
+.section{background:#1a1a24;border:1px solid #2d2d3d;border-radius:16px;padding:28px;margin-bottom:20px}
+.section-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:#f97316;margin-bottom:20px;display:flex;align-items:center;gap:8px}
+.row{margin-bottom:16px}
+label{display:block;font-size:13px;font-weight:500;color:#94a3b8;margin-bottom:6px}
+input[type=text],input[type=email],input[type=tel],textarea,select{width:100%;background:#0f0f13;border:1px solid #2d2d3d;border-radius:10px;padding:12px 14px;color:#e2e8f0;font-family:'Inter',sans-serif;font-size:14px;transition:border-color .2s}
+input:focus,textarea:focus,select:focus{outline:none;border-color:#f97316}
+textarea{resize:vertical;min-height:80px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.checkbox-group{display:flex;flex-direction:column;gap:10px}
+.checkbox-item{display:flex;align-items:center;gap:10px;cursor:pointer}
+.checkbox-item input[type=checkbox]{width:18px;height:18px;accent-color:#f97316;cursor:pointer;flex-shrink:0}
+.checkbox-item span{font-size:14px;color:#cbd5e1}
+.radio-group{display:flex;flex-wrap:wrap;gap:12px}
+.radio-item{display:flex;align-items:center;gap:8px;cursor:pointer}
+.radio-item input[type=radio]{accent-color:#f97316;width:16px;height:16px}
+.radio-item span{font-size:14px;color:#cbd5e1}
+.divider{height:1px;background:#2d2d3d;margin:20px 0}
+.submit-btn{width:100%;background:linear-gradient(135deg,#f97316,#ec4899);border:none;border-radius:12px;padding:16px;font-size:16px;font-weight:700;color:#fff;cursor:pointer;letter-spacing:.5px;transition:opacity .2s;margin-top:8px}
+.submit-btn:hover{opacity:.9}
+.note{background:#1a1a24;border-left:3px solid #f97316;border-radius:0 8px 8px 0;padding:14px 16px;font-size:13px;color:#94a3b8;margin-top:24px;line-height:1.7}
+footer{text-align:center;margin-top:32px;font-size:12px;color:#475569}
+@media(max-width:600px){.grid-2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <div class="badge">ZCOM / ZME Agency</div>
+    <h1>📋 KOC Brief — <span>Đặt hàng Booking KOC TikTok</span></h1>
+    <p>Điền đầy đủ thông tin để Agency lọc KOC phù hợp nhất cho chiến dịch của bạn</p>
+  </header>
+
+  <form action="https://formsubmit.co/thuong.zmar@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="[KOC Brief Mới] Đã nhận thông tin từ Brand">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://zcom.agency/thanks">
+
+    <!-- PHẦN 1 -->
+    <div class="section">
+      <div class="section-title">🏷️ Phần 1 — Thương hiệu & Sản phẩm</div>
+      <div class="grid-2">
+        <div class="row">
+          <label>Tên thương hiệu *</label>
+          <input type="text" name="ten_thuong_hieu" required placeholder="VD: Kos Milktea">
+        </div>
+        <div class="row">
+          <label>Ngành hàng *</label>
+          <select name="nganh_hang" required>
+            <option value="">-- Chọn ngành --</option>
+            <option>F&B (Đồ ăn / Thức uống)</option>
+            <option>Mỹ phẩm / Làm đẹp</option>
+            <option>Thời trang / Phụ kiện</option>
+            <option>Trang sức</option>
+            <option>Đồ gia dụng</option>
+            <option>Sức khỏe / Thực phẩm chức năng</option>
+            <option>Mẹ & Bé</option>
+            <option>Khác</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <label>Sản phẩm cần promote (tối đa 3 SP) *</label>
+        <textarea name="san_pham_promote" required placeholder="VD: Trà sữa trân châu hoàng kim, Matcha latte, Kem cheese..."></textarea>
+      </div>
+      <div class="grid-2">
+        <div class="row">
+          <label>Mức giá bán lẻ</label>
+          <input type="text" name="gia_ban" placeholder="VD: 45.000đ – 75.000đ">
+        </div>
+        <div class="row">
+          <label>Link TikTok Shop / Sản phẩm</label>
+          <input type="text" name="link_tiktok_shop" placeholder="https://...">
+        </div>
+      </div>
+      <div class="row">
+        <label>Điểm bán khác biệt (USP) *</label>
+        <textarea name="usp" required placeholder="Tại sao khách nên mua? Điểm gì nổi bật so với đối thủ?"></textarea>
+      </div>
+      <div class="row">
+        <label>Đối tượng khách hàng mục tiêu</label>
+        <input type="text" name="khach_hang_muc_tieu" placeholder="VD: Nữ 18–30, sinh viên và dân văn phòng tại TP.HCM">
+      </div>
+    </div>
+
+    <!-- PHẦN 2 -->
+    <div class="section">
+      <div class="section-title">🎯 Phần 2 — Mục tiêu chiến dịch</div>
+      <div class="row">
+        <label>Mục tiêu chính (chọn tất cả phù hợp)</label>
+        <div class="checkbox-group" style="margin-top:8px">
+          <label class="checkbox-item"><input type="checkbox" name="muc_tieu[]" value="Tăng nhận diện thương hiệu"><span>🔥 Tăng độ nhận diện thương hiệu (Awareness)</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="muc_tieu[]" value="Tăng doanh số GMV"><span>🛒 Tăng doanh số / GMV trực tiếp</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="muc_tieu[]" value="Tạo social proof UGC"><span>💬 Tạo social proof (reviews, UGC)</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="muc_tieu[]" value="Phủ hình ảnh sự kiện / Khai trương"><span>📣 Phủ hình ảnh sự kiện / Khai trương</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="muc_tieu[]" value="Tăng follower TikTok Shop"><span>👥 Tăng follower TikTok Shop</span></label>
+        </div>
+      </div>
+      <div class="row" style="margin-top:16px">
+        <label>KPI kỳ vọng cụ thể</label>
+        <input type="text" name="kpi_ky_vong" placeholder="VD: Tối thiểu 50.000 lượt xem / 30 đơn hàng / 15 video đăng">
+      </div>
+    </div>
+
+    <!-- PHẦN 3 -->
+    <div class="section">
+      <div class="section-title">👤 Phần 3 — Định hướng KOC</div>
+      <div class="grid-2">
+        <div class="row">
+          <label>Giới tính KOC</label>
+          <div class="radio-group" style="margin-top:8px">
+            <label class="radio-item"><input type="radio" name="gioi_tinh_koc" value="Nữ"><span>Nữ</span></label>
+            <label class="radio-item"><input type="radio" name="gioi_tinh_koc" value="Nam"><span>Nam</span></label>
+            <label class="radio-item"><input type="radio" name="gioi_tinh_koc" value="Không quan trọng"><span>Không quan trọng</span></label>
+          </div>
+        </div>
+        <div class="row">
+          <label>Độ tuổi KOC</label>
+          <input type="text" name="do_tuoi_koc" placeholder="VD: 20–30 tuổi">
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="row">
+          <label>Khu vực địa lý *</label>
+          <input type="text" name="khu_vuc" required placeholder="VD: TP.HCM, Gò Vấp, Toàn quốc">
+        </div>
+        <div class="row">
+          <label>Followers tối thiểu</label>
+          <select name="followers">
+            <option value="">-- Chọn --</option>
+            <option>Dưới 5k (Nano)</option>
+            <option>5k – 50k (Micro)</option>
+            <option>50k – 500k (Mid-tier)</option>
+            <option>Không quan trọng</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <label>Phong cách / Niche KOC</label>
+        <input type="text" name="niche_koc" placeholder="VD: Foodie, Lifestyle, Làm mẹ, Công sở, Beauty...">
+      </div>
+      <div class="row">
+        <label>Tone giọng video mong muốn</label>
+        <div class="radio-group" style="margin-top:8px">
+          <label class="radio-item"><input type="radio" name="tone_video" value="Tự nhiên / chân thực"><span>Tự nhiên</span></label>
+          <label class="radio-item"><input type="radio" name="tone_video" value="Vui nhộn"><span>Vui nhộn</span></label>
+          <label class="radio-item"><input type="radio" name="tone_video" value="Cảm xúc / storytelling"><span>Cảm xúc</span></label>
+          <label class="radio-item"><input type="radio" name="tone_video" value="Chuyên nghiệp"><span>Chuyên nghiệp</span></label>
+        </div>
+      </div>
+      <div class="row">
+        <label>Hình thức nội dung ưu tiên</label>
+        <div class="checkbox-group" style="margin-top:8px">
+          <label class="checkbox-item"><input type="checkbox" name="hinh_thuc[]" value="Review sản phẩm / Unboxing"><span>Review sản phẩm / Unboxing</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="hinh_thuc[]" value="Vlog tích hợp vào cuộc sống"><span>Vlog / Tích hợp vào cuộc sống hàng ngày</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="hinh_thuc[]" value="Check-in địa điểm"><span>Check-in / Trải nghiệm tại địa điểm</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="hinh_thuc[]" value="Livestream bán hàng"><span>Livestream bán hàng</span></label>
+        </div>
+      </div>
+      <div class="row">
+        <label>KOC / Thương hiệu KHÔNG muốn hợp tác</label>
+        <input type="text" name="khong_hop_tac" placeholder="VD: Đối thủ trực tiếp, ngành nhạy cảm...">
+      </div>
+    </div>
+
+    <!-- PHẦN 4 -->
+    <div class="section">
+      <div class="section-title">✍️ Phần 4 — Yêu cầu nội dung</div>
+      <div class="row">
+        <label>Key Message — Thông điệp chính *</label>
+        <textarea name="key_message" required placeholder="VD: Trà sữa Gò Vấp ngon nhất — khai trương 21/06, đến là nghiện!"></textarea>
+      </div>
+      <div class="row">
+        <label>Điểm BẮT BUỘC có trong video (chọn tất cả)</label>
+        <div class="checkbox-group" style="margin-top:8px">
+          <label class="checkbox-item"><input type="checkbox" name="bat_buoc[]" value="Mention tên thương hiệu"><span>Mention tên thương hiệu / sản phẩm</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="bat_buoc[]" value="Hiển thị logo / bảng hiệu"><span>Hiển thị logo / bảng hiệu</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="bat_buoc[]" value="Gắn link TikTok Shop"><span>Gắn link sản phẩm / TikTok Shop</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="bat_buoc[]" value="Gọi tên địa điểm cụ thể"><span>Gọi tên địa điểm / địa chỉ cụ thể</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="bat_buoc[]" value="Dùng hashtag brand"><span>Dùng hashtag của brand</span></label>
+        </div>
+      </div>
+      <div class="row">
+        <label>Hashtag bắt buộc dùng</label>
+        <input type="text" name="hashtag" placeholder="VD: #KosMilktea #TraSuaGoVap">
+      </div>
+      <div class="row">
+        <label>Điều TUYỆT ĐỐI KHÔNG làm trong video</label>
+        <textarea name="cam_ky" placeholder="VD: Không nhắc giá cũ, không so sánh với đối thủ, không dùng âm nhạc có bản quyền..."></textarea>
+      </div>
+      <div class="row">
+        <label>Tài nguyên Brand sẽ cung cấp cho KOC</label>
+        <div class="checkbox-group" style="margin-top:8px">
+          <label class="checkbox-item"><input type="checkbox" name="tai_nguyen[]" value="Sản phẩm mẫu gửi tay"><span>Sản phẩm mẫu (gửi tay)</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="tai_nguyen[]" value="Hình ảnh / Video gốc chất lượng cao"><span>Hình ảnh / Video gốc chất lượng cao</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="tai_nguyen[]" value="Voucher / Mã giảm giá"><span>Voucher / Mã giảm giá cho KOC chia sẻ</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="tai_nguyen[]" value="Đơn mời trải nghiệm tại địa điểm"><span>Đơn mời trải nghiệm tại địa điểm</span></label>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHẦN 5 -->
+    <div class="section">
+      <div class="section-title">📅 Phần 5 — Timeline & Ngân sách</div>
+      <div class="grid-2">
+        <div class="row">
+          <label>Ngày bắt đầu chiến dịch *</label>
+          <input type="text" name="ngay_bat_dau" required placeholder="VD: 10/06/2026">
+        </div>
+        <div class="row">
+          <label>Ngày sự kiện / Deadline *</label>
+          <input type="text" name="ngay_su_kien" required placeholder="VD: Khai trương 21/06/2026">
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="row">
+          <label>Deadline KOC phải đăng video</label>
+          <input type="text" name="deadline_dang" placeholder="VD: Trước 18/06/2026">
+        </div>
+        <div class="row">
+          <label>Số lượng KOC mong muốn</label>
+          <select name="so_luong_koc">
+            <option value="">-- Chọn --</option>
+            <option>3–5 KOC</option>
+            <option>5–10 KOC</option>
+            <option>10–20 KOC</option>
+            <option>20+ KOC</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="row">
+          <label>Ngân sách tổng cho KOC</label>
+          <select name="ngan_sach_tong">
+            <option value="">-- Chọn --</option>
+            <option>Dưới 5 triệu</option>
+            <option>5 – 10 triệu</option>
+            <option>10 – 20 triệu</option>
+            <option>20 – 50 triệu</option>
+            <option>Thỏa thuận</option>
+          </select>
+        </div>
+        <div class="row">
+          <label>Rate tối đa / 1 KOC</label>
+          <input type="text" name="rate_toi_da" placeholder="VD: Dưới 2.000.000đ / KOC">
+        </div>
+      </div>
+      <div class="row">
+        <label>Link video KOC mà Brand thích (tham khảo)</label>
+        <textarea name="link_tham_khao" placeholder="Dán 1–3 link TikTok mà Brand thấy đúng hướng muốn làm..."></textarea>
+      </div>
+    </div>
+
+    <!-- PHẦN 6 -->
+    <div class="section">
+      <div class="section-title">👤 Phần 6 — Thông tin liên hệ</div>
+      <div class="grid-2">
+        <div class="row">
+          <label>Họ tên người phụ trách *</label>
+          <input type="text" name="ho_ten" required placeholder="Họ và tên đầy đủ">
+        </div>
+        <div class="row">
+          <label>Chức vụ</label>
+          <input type="text" name="chuc_vu" placeholder="VD: Marketing Manager">
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="row">
+          <label>SĐT / Zalo *</label>
+          <input type="tel" name="so_dien_thoai" required placeholder="0912 345 678">
+        </div>
+        <div class="row">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="example@gmail.com">
+        </div>
+      </div>
+      <div class="row">
+        <label>Ghi chú thêm cho Agency</label>
+        <textarea name="ghi_chu" placeholder="Bất kỳ yêu cầu đặc biệt hoặc thông tin bổ sung nào..."></textarea>
+      </div>
+    </div>
+
+    <button type="submit" class="submit-btn">🚀 Gửi Brief cho Agency</button>
+  </form>
+
+  <div class="note">
+    💡 <strong>Lưu ý:</strong> Brief nhận trước 17:00 → Agency phản hồi danh sách KOC sơ bộ trong <strong>24h làm việc</strong>. Brand cần duyệt danh sách trong <strong>24h</strong> để Agency kịp liên hệ và gửi hàng mẫu đúng tiến độ.
+  </div>
+
+  <footer style="margin-top:24px">ZCOM / ZME Agency · KOC Brief Form v1.0 · 06/2026</footer>
+</div>
+</body>
+</html>
